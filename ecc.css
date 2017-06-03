@@ -1,0 +1,105 @@
+header {
+	margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: verdana;
+		vertical-align: baseline;
+	
+}
+
+
+
+
+
+#banner {
+		padding: 14em 0 12em 0;
+		background-image: url(images/vote3.jpg);
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+		#banner .content {
+			-moz-transition: opacity 1s ease-in-out, -moz-transform 0.75s ease-in-out;
+			-webkit-transition: opacity 1s ease-in-out, -webkit-transform 0.75s ease-in-out;
+			-ms-transition: opacity 1s ease-in-out, -ms-transform 0.75s ease-in-out;
+			transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+			opacity: 1;
+		}
+
+		#banner h1 {
+			font-size: 3em;
+			color: #000000;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#banner p {
+			font-size: 1.25em;
+			margin-bottom: 
+			1.75em;
+			color: #000000;
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#banner {
+				padding: 12em 0 10em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			#banner {
+				padding: 8em 6em 6em 6em;
+			}
+
+				#banner br {
+					display: none;
+				}
+
+				#banner h1 {
+					font-size: 2.25em;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#banner {
+				padding: 6em 4em 4em 4em;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#banner {
+				padding: 4em 2em 2em 2em;
+			}
+
+				#banner h1 {
+					font-size: 2em;
+				}
+
+				#banner p {
+					font-size: 1em;
+				}
+
+				#banner .button {
+					font-size: .9em;
+				}
+
+		}
+
+		body.is-loading #banner .content {
+			opacity: 0;
+			-moz-transform: translateY(1em);
+			-webkit-transform: translateY(1em);
+			-ms-transform: translateY(1em);
+			transform: translateY(1em);
+		}
